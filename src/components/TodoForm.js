@@ -8,14 +8,15 @@ const TodoForm = (props) => {
         setInput(e.target.value)
     }
 
-    const handleSumbit = (e) => {
+    const handleSumbit = e => {
         e.preventDefault();
 
-        // props.onSubmit({
-        //     id: nanoid(),
-        //     text: input
-        // })
-        setInput('')
+        props.onSubmit({
+            id: nanoid(),
+            text: input
+        });
+
+        setInput('');
     }
 
     return (
