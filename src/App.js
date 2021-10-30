@@ -1,10 +1,9 @@
-import TodoForm from "./components/TodoForm"
+import TodoList from "./components/TodoList"
 
 const App = () => {
     return (
         <div className="todo-app">
-            <h1>react todolist</h1>
-            <TodoForm />
+            <TodoList />
         </div>
     )
 }
